@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Opportunities in Japan</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Include Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="container">
+                <h1 tabindex="0">Work Opportunities in Japan</h1>
+                <!-- Hamburger Icon for Menu Toggle -->
+                <div class="menu-toggle" tabindex="0" role="button" aria-label="Toggle Menu">
+                    <input type="checkbox" id="menu-toggle-checkbox">
+                    <label for="menu-toggle-checkbox" class="menu-icon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+                <!-- Menu Items -->
+                <ul class="menu-items" role="menu">
+                    <li role="menuitem"><a href="#home">Home</a></li>
+                    <li role="menuitem"><a href="#job-listings">Job Listings</a></li>
+                    <li role="menuitem"><a href="#about-japan">About Japan</a></li>
+                    <li role="menuitem"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="map">
+        <!-- Map Section -->
+        <div class="container">
+            <h2>Explore Job Opportunities</h2>
+            <div id="map-container"></div>
+        </div>
+    </section>
+
+    <section id="home">
+        <!-- Home Section Content -->
+        <div class="container">
+            <h2>Welcome to Work Opportunities in Japan</h2>
+            <p>Explore exciting job opportunities in Japan and experience its rich culture and lifestyle.</p>
+        </div>
+    </section>
+
+    <section id="job-listings">
+        <!-- Job Listings Section Content -->
+        <div class="container">
+            <h2>Job Listings</h2>
+            <!-- Job Listing Cards will be dynamically populated using JavaScript -->
+            <div id="job-listing-cards"></div>
+        </div>
+    </section>
+
+    <section id="about-japan">
+        <!-- About Japan Section Content -->
+        <div class="container">
+            <h2>About Japan</h2>
+            <p>Japan, an island country located in East Asia, is known for its unique blend of ancient traditions and modern innovations. From the bustling metropolises of Tokyo and Osaka to the serene temples and gardens of Kyoto, Japan offers a diverse range of experiences for both residents and visitors.</p>
+            <p>Japanese culture is rich in history and tradition, with practices such as tea ceremonies, martial arts, and cherry blossom viewing deeply ingrained in daily life. The country's cuisine, including sushi, ramen, and tempura, is celebrated worldwide for its freshness and flavor.</p>
+            <p>With a strong economy and a reputation for technological advancement, Japan presents numerous work opportunities across various industries. Whether you're interested in software engineering, teaching English, or marketing, Japan offers a vibrant and dynamic work environment.</p>
+            <p>Japan is also renowned for its efficient public transportation system, including the world-famous Shinkansen (bullet train), which connects major cities with high-speed rail service. The country's dedication to cleanliness and orderliness makes it a pleasant and convenient place to live and work.</p>
+            <p>Moreover, Japan's natural beauty, including majestic mountains, pristine beaches, and lush forests, provides ample opportunities for outdoor recreation and exploration. From skiing in Hokkaido to hiking in the Japanese Alps, there's no shortage of adventures to be had in this picturesque country.</p>
+            <p>Overall, Japan offers a unique blend of tradition and modernity, making it an exciting and rewarding destination for those seeking work opportunities and cultural experiences.</p>
+        </div>
+    </section>
+    
+
+    <section id="contact">
+        <!-- Contact Section Content -->
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you have any inquiries or questions, feel free to contact us.</p>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="feedback">
+        <!-- Feedback Form Section -->
+        <div class="container">
+            <h2>Feedback</h2>
+            <form id="feedback-form">
+                <label for="feedback-message">We'd love to hear your feedback:</label>
+                <textarea id="feedback-message" name="feedback-message" rows="5" required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <!-- Footer Section -->
+        <div class="container">
+            <p>&copy; 2024 Work Opportunities in Japan</p>
+        </div>
+    </footer>
+    <!-- Include Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
